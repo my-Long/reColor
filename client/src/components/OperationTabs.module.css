@@ -1,7 +1,7 @@
 .tabs {
   display: flex;
   gap: 4px;
-  background: #1e2435;
+  background: var(--bg-panel);
   border-radius: 10px;
   padding: 4px;
 }
@@ -12,16 +12,16 @@
   border: none;
   border-radius: 7px;
   background: transparent;
-  color: #64748b;
+  color: var(--text-muted);
   font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
   transition: background 0.15s, color 0.15s;
 }
 
-.tab:hover { color: #cbd5e1; }
+.tab:hover { color: var(--text-primary); }
 
 .active {
-  background: #6366f1;
+  background: var(--accent);
   color: #fff;
 }

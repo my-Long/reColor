@@ -1,7 +1,7 @@
 .panel { display: flex; flex-direction: column; gap: 12px; }
 
-.label { font-size: 0.8rem; color: #94a3b8; font-weight: 500; }
-.desc { font-size: 0.85rem; color: #64748b; line-height: 1.5; }
+.label { font-size: 0.8rem; color: var(--text-secondary); font-weight: 500; }
+.desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
 
 .radioGroup { display: flex; gap: 8px; }
 
@@ -13,26 +13,26 @@
   gap: 6px;
   padding: 10px;
   border-radius: 8px;
-  background: #0f1117;
-  border: 1px solid #334155;
+  background: var(--bg-base);
+  border: 1px solid var(--border);
   cursor: pointer;
   font-size: 0.875rem;
-  color: #94a3b8;
+  color: var(--text-secondary);
   transition: border-color 0.15s, color 0.15s;
 }
 
 .radio input { display: none; }
 
 .selected {
-  border-color: #6366f1;
-  color: #a5b4fc;
-  background: #1e1f3a;
+  border-color: var(--accent);
+  color: var(--accent-light);
+  background: var(--accent-bg);
 }
 
 .btn {
   width: 100%;
   padding: 10px;
-  background: #6366f1;
+  background: var(--accent);
   border: none;
   border-radius: 8px;
   color: #fff;

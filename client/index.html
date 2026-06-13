@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>reColor - 图片主题转换</title>
+    <script>
+      (function () {
+        try {
+          var s = localStorage.getItem('recolor-settings');
+          var t = s ? JSON.parse(s).state?.uiTheme : 'dark';
+          document.documentElement.setAttribute('data-theme', t || 'dark');
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

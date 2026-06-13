@@ -8,7 +8,7 @@
 .nav {
   width: 130px;
   flex-shrink: 0;
-  border-right: 1px solid #1e293b;
+  border-right: 1px solid var(--border-subtle);
   padding: 12px 8px;
   display: flex;
   flex-direction: column;
@@ -22,12 +22,12 @@
   background: none;
   border: none;
   border-radius: 8px;
-  color: #64748b;
+  color: var(--text-muted);
   font-size: 0.875rem;
   cursor: pointer;
 }
-.navItem:hover { background: #0f1117; color: #cbd5e1; }
-.navActive { background: #0f1117 !important; color: #a5b4fc !important; }
+.navItem:hover { background: var(--bg-base); color: var(--text-primary); }
+.navActive { background: var(--bg-base) !important; color: var(--accent-light) !important; }
 
 .content {
   flex: 1;
@@ -46,14 +46,14 @@
   gap: 12px;
 }
 
-.desc { font-size: 0.8rem; color: #64748b; line-height: 1.5; flex: 1; }
+.desc { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; flex: 1; }
 
 .pairs { display: flex; flex-direction: column; gap: 8px; }
 
-.empty { font-size: 0.8rem; color: #334155; padding: 16px 0; text-align: center; }
+.empty { font-size: 0.8rem; color: var(--text-empty); padding: 16px 0; text-align: center; }
 
 .row {
-  background: #0f1117;
+  background: var(--bg-base);
   border-radius: 10px;
   padding: 12px;
   display: flex;
@@ -70,7 +70,6 @@
   justify-content: space-between;
 }
 
-/* 颜色对 + fuzz 一行不换行 */
 .rowMain {
   display: flex;
   align-items: flex-end;
@@ -91,7 +90,7 @@
   flex-direction: column;
   gap: 5px;
   font-size: 0.72rem;
-  color: #64748b;
+  color: var(--text-muted);
   min-width: 0;
   flex: 1;
 }
@@ -106,28 +105,28 @@
 
 .hexText {
   width: 76px;
-  background: #1e2435;
-  border: 1px solid #334155;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
   border-radius: 6px;
-  color: #e2e8f0;
+  color: var(--text-primary);
   font-size: 0.78rem;
   padding: 4px 7px;
   font-family: monospace;
   min-width: 0;
 }
-.hexText:focus { outline: none; border-color: #6366f1; }
+.hexText:focus { outline: none; border-color: var(--accent); }
 
-.arrow { color: #6366f1; font-size: 1rem; padding-bottom: 5px; flex-shrink: 0; }
+.arrow { color: var(--accent); font-size: 1rem; padding-bottom: 5px; flex-shrink: 0; }
 
 .fuzz {
   display: flex;
   flex-direction: column;
   gap: 4px;
   font-size: 0.72rem;
-  color: #64748b;
+  color: var(--text-muted);
   width: 90px;
   flex-shrink: 0;
 }
-.fuzz input[type="range"] { width: 100%; accent-color: #6366f1; }
+.fuzz input[type="range"] { width: 100%; accent-color: var(--accent); }
 
 .footer { display: flex; justify-content: flex-end; gap: 8px; }

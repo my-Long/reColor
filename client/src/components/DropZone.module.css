@@ -1,26 +1,26 @@
 .zone {
-  border: 2px dashed #334155;
+  border: 2px dashed var(--border);
   border-radius: 12px;
   padding: 40px 24px;
   text-align: center;
   cursor: pointer;
   transition: border-color 0.2s, background 0.2s;
-  background: #1e2435;
+  background: var(--bg-panel);
   user-select: none;
 }
 
 .zone:hover, .over {
-  border-color: #6366f1;
-  background: #1e2435cc;
+  border-color: var(--accent);
+  background: var(--bg-panel-alpha);
 }
 
 .icon {
   display: block;
   font-size: 2.5rem;
-  color: #6366f1;
+  color: var(--accent);
   margin-bottom: 8px;
   line-height: 1;
 }
 
-p { color: #94a3b8; font-size: 0.9rem; }
-.hint { font-size: 0.75rem; margin-top: 4px; color: #475569; }
+p { color: var(--text-secondary); font-size: 0.9rem; }
+.hint { font-size: 0.75rem; margin-top: 4px; color: var(--text-faint); }

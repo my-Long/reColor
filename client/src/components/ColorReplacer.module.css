@@ -1,7 +1,7 @@
 .pairs { display: flex; flex-direction: column; gap: 12px; margin-bottom: 12px; }
 
 .row {
-  background: #0f1117;
+  background: var(--bg-base);
   border-radius: 8px;
   padding: 12px;
   display: flex;
@@ -16,26 +16,26 @@
   gap: 8px;
 }
 
-.colorPair label { display: flex; flex-direction: column; gap: 4px; font-size: 0.75rem; color: #64748b; }
+.colorPair label { display: flex; flex-direction: column; gap: 4px; font-size: 0.75rem; color: var(--text-muted); }
 
 .colorInput { display: flex; align-items: center; gap: 6px; }
 .colorInput input[type="color"] { width: 32px; height: 32px; border: none; border-radius: 6px; cursor: pointer; padding: 0; background: none; }
 
 .hexText {
   width: 80px;
-  background: #1e2435;
-  border: 1px solid #334155;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
   border-radius: 6px;
-  color: #e2e8f0;
+  color: var(--text-primary);
   font-size: 0.8rem;
   padding: 4px 8px;
   font-family: monospace;
 }
 
-.arrow { color: #6366f1; font-size: 1.2rem; align-self: flex-end; padding-bottom: 6px; }
+.arrow { color: var(--accent); font-size: 1.2rem; align-self: flex-end; padding-bottom: 6px; }
 
-.fuzz { font-size: 0.75rem; color: #64748b; display: flex; flex-direction: column; gap: 4px; }
-.fuzz input[type="range"] { width: 100%; accent-color: #6366f1; }
+.fuzz { font-size: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px; }
+.fuzz input[type="range"] { width: 100%; accent-color: var(--accent); }
 
 .remove {
   position: absolute;
@@ -52,11 +52,11 @@
 .addBtn {
   flex: 1;
   padding: 9px 16px;
-  background: #1e2435;
-  border: 1px dashed #334155;
+  background: var(--bg-panel);
+  border: 1px dashed var(--border);
   border-radius: 8px;
-  color: #6366f1;
+  color: var(--accent);
   font-size: 0.875rem;
   cursor: pointer;
 }
-.addBtn:hover { border-color: #6366f1; }
+.addBtn:hover { border-color: var(--accent); }

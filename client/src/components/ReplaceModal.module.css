@@ -10,8 +10,8 @@
 }
 
 .modal {
-  background: #1e2435;
-  border: 1px solid #334155;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
   border-radius: 14px;
   width: 640px;
   max-width: calc(100vw - 32px);
@@ -26,23 +26,23 @@
   align-items: center;
   justify-content: space-between;
   padding: 16px 20px;
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid var(--border-subtle);
   font-size: 0.95rem;
   font-weight: 600;
-  color: #e2e8f0;
+  color: var(--text-primary);
 }
 
 .close {
   background: none;
   border: none;
-  color: #64748b;
+  color: var(--text-muted);
   font-size: 1rem;
   cursor: pointer;
   line-height: 1;
   padding: 2px 6px;
   border-radius: 4px;
 }
-.close:hover { color: #e2e8f0; background: #334155; }
+.close:hover { color: var(--text-primary); background: var(--border); }
 
 .body {
   overflow-y: auto;
@@ -54,7 +54,7 @@
 }
 
 .row {
-  background: #0f1117;
+  background: var(--bg-base);
   border-radius: 10px;
   padding: 14px;
   display: flex;
@@ -73,7 +73,7 @@
   flex-direction: column;
   gap: 6px;
   font-size: 0.75rem;
-  color: #64748b;
+  color: var(--text-muted);
   flex: 1;
 }
 
@@ -96,18 +96,18 @@
 
 .hexText {
   flex: 1;
-  background: #1e2435;
-  border: 1px solid #334155;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
   border-radius: 8px;
-  color: #e2e8f0;
+  color: var(--text-primary);
   font-size: 0.85rem;
   padding: 6px 10px;
   font-family: monospace;
 }
-.hexText:focus { outline: none; border-color: #6366f1; }
+.hexText:focus { outline: none; border-color: var(--accent); }
 
 .arrow {
-  color: #6366f1;
+  color: var(--accent);
   font-size: 1.25rem;
   padding-bottom: 8px;
   flex-shrink: 0;
@@ -118,9 +118,9 @@
   flex-direction: column;
   gap: 4px;
   font-size: 0.75rem;
-  color: #64748b;
+  color: var(--text-muted);
 }
-.fuzz input[type="range"] { width: 100%; accent-color: #6366f1; }
+.fuzz input[type="range"] { width: 100%; accent-color: var(--accent); }
 
 .remove {
   position: absolute;
@@ -137,38 +137,38 @@
 .addBtn {
   padding: 10px;
   background: transparent;
-  border: 1px dashed #334155;
+  border: 1px dashed var(--border);
   border-radius: 8px;
-  color: #6366f1;
+  color: var(--accent);
   font-size: 0.875rem;
   cursor: pointer;
   width: 100%;
 }
-.addBtn:hover { border-color: #6366f1; background: #1e1f3a20; }
+.addBtn:hover { border-color: var(--accent); background: var(--accent-bg); }
 
 .footer {
   display: flex;
   gap: 10px;
   padding: 16px 20px;
-  border-top: 1px solid #1e293b;
+  border-top: 1px solid var(--border-subtle);
 }
 
 .cancel {
   flex: 1;
   padding: 10px;
   background: transparent;
-  border: 1px solid #334155;
+  border: 1px solid var(--border);
   border-radius: 8px;
-  color: #94a3b8;
+  color: var(--text-secondary);
   font-size: 0.875rem;
   cursor: pointer;
 }
-.cancel:hover { border-color: #64748b; color: #e2e8f0; }
+.cancel:hover { border-color: var(--text-muted); color: var(--text-primary); }
 
 .submit {
   flex: 2;
   padding: 10px;
-  background: #6366f1;
+  background: var(--accent);
   border: none;
   border-radius: 8px;
   color: #fff;

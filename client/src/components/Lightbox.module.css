@@ -24,10 +24,10 @@
   position: fixed;
   top: 16px;
   right: 20px;
-  background: #1e2435cc;
-  border: 1px solid #334155;
+  background: var(--bg-panel-alpha);
+  border: 1px solid var(--border);
   border-radius: 8px;
-  color: #94a3b8;
+  color: var(--text-secondary);
   font-size: 1rem;
   width: 36px;
   height: 36px;
@@ -37,4 +37,4 @@
   justify-content: center;
   backdrop-filter: blur(4px);
 }
-.close:hover { color: #e2e8f0; background: #334155; }
+.close:hover { color: var(--text-primary); background: var(--border); }

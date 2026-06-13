@@ -19,13 +19,13 @@
 .header h1 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #e2e8f0;
+  color: var(--text-primary);
   letter-spacing: -0.02em;
 }
 
 .header p {
   font-size: 0.8rem;
-  color: #64748b;
+  color: var(--text-muted);
   margin-top: 2px;
 }
 
@@ -53,9 +53,9 @@
 .imageArea {
   flex: 1;
   min-height: 0;
-  background: #1e2435;
+  background: var(--bg-panel);
   border-radius: 12px;
-  border: 1px solid #1e293b;
+  border: 1px solid var(--border-subtle);
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -74,23 +74,7 @@
 
 .clickable { cursor: zoom-in; }
 
-.reupload {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  padding: 6px 12px;
-  background: #0f1117cc;
-  border: 1px solid #334155;
-  border-radius: 6px;
-  color: #94a3b8;
-  font-size: 0.75rem;
-  cursor: pointer;
-  backdrop-filter: blur(4px);
-  transition: color 0.15s, border-color 0.15s;
-}
-.reupload:hover { color: #e2e8f0; border-color: #6366f1; }
-
-.empty { color: #334155; font-size: 0.875rem; }
+.empty { color: var(--text-empty); font-size: 0.875rem; }
 
 .spinner {
   position: absolute; inset: 0;
@@ -98,8 +82,8 @@
 }
 .spinner span {
   width: 36px; height: 36px;
-  border: 3px solid #1e293b;
-  border-top-color: #6366f1;
+  border: 3px solid var(--spinner-track);
+  border-top-color: var(--accent);
   border-radius: 50%;
   animation: spin 0.7s linear infinite;
 }
@@ -107,9 +91,9 @@
 
 .controls {
   flex-shrink: 0;
-  background: #1e2435;
+  background: var(--bg-panel);
   border-radius: 12px;
-  border: 1px solid #1e293b;
+  border: 1px solid var(--border-subtle);
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -119,13 +103,20 @@
 .error {
   font-size: 0.8rem;
   color: #f87171;
-  background: #1e1117;
+  background: var(--bg-panel);
   border: 1px solid #ef444430;
   border-radius: 8px;
   padding: 10px 12px;
 }
 
-.hint { font-size: 0.8rem; color: #334155; text-align: center; }
+.hint { font-size: 0.8rem; color: var(--text-empty); text-align: center; }
+
+.selectorRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+}
 
 .btnRow {
   display: flex;
