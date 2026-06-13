@@ -1,0 +1,140 @@
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  flex-shrink: 0;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  letter-spacing: -0.02em;
+}
+
+.header p {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.columns {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  min-height: 0;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+}
+
+.imageArea {
+  flex: 1;
+  min-height: 0;
+  background: #1e2435;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.imageArea img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.clickable { cursor: zoom-in; }
+
+.reupload {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 6px 12px;
+  background: #0f1117cc;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #94a3b8;
+  font-size: 0.75rem;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: color 0.15s, border-color 0.15s;
+}
+.reupload:hover { color: #e2e8f0; border-color: #6366f1; }
+
+.empty { color: #334155; font-size: 0.875rem; }
+
+.spinner {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.spinner span {
+  width: 36px; height: 36px;
+  border: 3px solid #1e293b;
+  border-top-color: #6366f1;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.controls {
+  flex-shrink: 0;
+  background: #1e2435;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.error {
+  font-size: 0.8rem;
+  color: #f87171;
+  background: #1e1117;
+  border: 1px solid #ef444430;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.hint { font-size: 0.8rem; color: #334155; text-align: center; }
+
+.btnRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .app { height: auto; min-height: 100vh; }
+  .columns { grid-template-columns: 1fr; }
+  .imageArea { min-height: 300px; }
+}
