@@ -1,5 +1,11 @@
 # reColor
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="renderings-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="renderings-light.png">
+  <img src="renderings-dark.png" alt="效果预览">
+</picture>
+
 博客图片明暗主题转换工具。将亮色截图转为暗色配色（或反向），同时支持任意颜色精确替换与主色分析。基于 Sharp，无需 ImageMagick 等系统依赖。
 
 ---
